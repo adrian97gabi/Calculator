@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+ 	<link rel="stylesheet" type="text/css" href="style.css">
+ 	<script type="text/javascript" src="calcul.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="calcul">
+			<h1>Calculator Personal</h1>
+			<br>
+			<hr>
+			<form>
+				<input type="number" class="numar" id="x"  maxlength="9" >
+				<br>
+
+				<input type="text" list=operatie id="op"  >
+					<datalist id="operatie">
+					    <option>+</option>
+					    <option>-</option>
+					    <option>*</option>
+					    <option>/</option>
+					    <option>%</option>
+					</datalist>
+
+				<br>
+
+				<input type="number" class="numar" id="y" maxlength="9">
+
+				<br>
+
+				<input type="button" value="Rezultat" id="btn" onclick="calc()">
+
+				<br>
+			</form>
+
+		</div>
+		<hr>
+		<footer>
+			<p>Rezultatul calculului tau este <b id="rezultat" > </b></p>
+		</footer>
+	</div>
+
+</body>
+</html>
